@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таємні Карпати — Путівник дикою природою</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайту -->
+    <header class="header">
+        <div class="logo">
+            Таємні Карпати
+        </div>
+        <nav class="nav">
+            <a href="#hero">Головна</a>
+            <a href="#places">Локації</a>
+            <a href="#booking">Бронювання</a>
+            <a href="#about">Про нас</a>
+            <a href="#contact" class="nav-btn">Залишити відгук</a>
+        </nav>
+    </header>
+
+    <!-- Головний банер (Hero) -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Відкрий для себе Таємні Карпати</h1>
+            <p>Досліджуй найдикіші стежки, величні вершини, кришталеві озерця та унікальну культуру українських гір разом із нами.</p>
+            <a href="#booking" class="btn-primary">Забронювати тур</a>
+        </div>
+    </section>
+
+    <!-- Секція з картками місць -->
+    <section id="places" class="places-section">
+        <div class="section-title">
+            <h2>Популярні та таємні локації</h2>
+            <p>Місця, які обов'язково варто відвідати хоча б раз у житті</p>
+        </div>
+
+        <div class="places-grid">
+            <!-- Картка 1 -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Озеро Синевир">
+                    <span class="card-badge">Озеро</span>
+                </div>
+                <div class="card-body">
+                    <h3>Озеро Синевир</h3>
+                    <p>Найбільше гірське озеро України, що лежить у мальовничому обрамленні вікових смерек. Його часто називають «Морським оком».</p>
+                    <div class="card-footer">
+                        <span class="rating">⭐ 4.9 (124 відгуки)</span>
+                        <span class="location">Закарпаття</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Картка 2 -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" alt="Гора Говерла">
+                    <span class="card-badge">Вершина</span>
+                </div>
+                <div class="card-body">
+                    <h3>Гора Говерла</h3>
+                    <p>Найвища точка України (2061 метр). Підйом на неї дарує незабутні емоції, панорамні краєвиди на десятки кілометрів навколо та відчуття єдності з небом.</p>
+                    <div class="card-footer">
+                        <span class="rating">⭐ 4.8 (215 відгуків)</span>
+                        <span class="location">Івано-Франківщина</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Картка 3 -->
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05" alt="Водоспад Шипіт">
+                    <span class="card-badge">Водоспад</span>
+                </div>
+                <div class="card-body">
+                    <h3>Водоспад Шипіт</h3>
+                    <p>Один із найвиразніших і найпрекрасніших водоспадів Карпат. Вода каскадами спадає з висоти 14 метрів серед мальовничого лісу.</p>
+                    <div class="card-footer">
+                        <span class="rating">⭐ 4.7 (98 відгуків)</span>
+                        <span class="location">Пилипець</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секція бронювання туру -->
+    <section id="booking" class="booking-section">
+        <div class="booking-container">
+            <div class="booking-text">
+                <h2>Забронювати незабутню подорож</h2>
+                <p>Обери локацію, вкажи дату — і наші провідники зв'яжуться з тобою для уточнення деталей поїздки.</p>
+            </div>
+
+            <form class="booking-form">
+                <div class="form-group-single">
+                    <label for="userName">Ваше ім'я</label>
+                    <input type="text" id="userName" placeholder="Введіть ваше ім'я" required>
+                </div>
+
+                <div class="form-group-single">
+                    <label for="userPhone">Номер телефону</label>
+                    <input type="tel" id="userPhone" placeholder="+380 (__) ___-__-__" pattern="^\+380\d{9}$" maxlength="13" title="Формат: +380XXXXXXXXX" required>
+                </div>
+
+                <div class="form-group-single">
+                    <label for="locationSelect">Оберіть локацію</label>
+                    <select id="locationSelect" required>
+                        <option value="" disabled selected>Оберіть локацію з переліку</option>
+                        <option value="synevyr">Озеро Синевир</option>
+                        <option value="hoverla">Гора Говерла</option>
+                        <option value="shypit">Водоспад Шипіт</option>
+                    </select>
+                </div>
+
+                <div class="form-group-single">
+                    <label for="tourDate">Вкажіть дату поїздки</label>
+                    <input type="date" id="tourDate" min="2026-10-12" max="2027-12-31" required>
+                </div>
+
+                <button type="submit" class="btn-primary btn-booking">Підтвердити бронювання</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Секція «Про проєкт» -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2>Про наш путівник</h2>
+            <p>Проєкт «Таємні Карпати» створений для того, щоб показати всю велич українських гір. Ми збираємо найкращі локації, перевірені маршрути та щирі враження мандрівників в одному зручному місці.</p>
+        </div>
+    </section>
+
+    <!-- Форма зворотного зв'язку -->
+    <section id="contact" class="contact-section">
+        <div class="contact-content">
+            <h2>Поділіться враженнями</h2>
+            <p>Були в Карпатах чи знаєте цікаве місце? Залиште свій відгук чи пропозицію!</p>
+
+            <form class="feedback-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Ваше ім'я" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Ваш Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Ваше повідомлення або відгук..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Надіслати відгук</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Підвал сайту -->
+    <footer class="footer">
+        <p>&copy; 2026 «Таємні Карпати». Усі права захищені. Зроблено з любов'ю до гір.</p>
+    </footer>
+
+</body>
+</html>
