@@ -6,6 +6,6 @@ namespace Karpaty.API.Models
         public string UserName { get; set; }
         public string Email { get; set; }
         public string Message { get; set; }
-        public int CreatedAt { get; set; }  
+        public DateTime CreatedAt { get; set; }  
     }
 }
